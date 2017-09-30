@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="-1024 -1024 2048 2048" width="256" height="256">
+  <defs>
+    <path id="minutemark" d="M -20,-1000 l 40,0 0,100 -40,0 z" />
+    <path id="hourmark" d="M -40,-1000 l 80,0 0,240 -80,0 z" />
+    <path id="threehourmark" d="M -40,-1000 l 80,0 0,300 -80,0 z" />
+    <g id="twelfthface">
+      <use xlink:href="#minutemark" transform="rotate(06)" />
+      <use xlink:href="#minutemark" transform="rotate(12)" />
+      <use xlink:href="#minutemark" transform="rotate(18)" />
+      <use xlink:href="#minutemark" transform="rotate(24)" />
+    </g>
+    <g id="quarterface">
+      <use xlink:href="#twelfthface" />
+      <use xlink:href="#twelfthface" transform="rotate(30)" />
+      <use xlink:href="#twelfthface" transform="rotate(60)" />
+      <use xlink:href="#threehourmark" />
+      <use xlink:href="#hourmark" transform="rotate(30)" />
+      <use xlink:href="#hourmark" transform="rotate(60)" />
+    </g>
+    <g id="face">
+      <use xlink:href="#quarterface" />
+      <use xlink:href="#quarterface" transform="rotate(90)"  />
+      <use xlink:href="#quarterface" transform="rotate(180)" />
+      <use xlink:href="#quarterface" transform="rotate(270)" />
+    </g>
+  </defs>
+  <circle fill="#ffffff" r="1024" />
+  <use fill="#000000" xlink:href="#face" />
+</svg>

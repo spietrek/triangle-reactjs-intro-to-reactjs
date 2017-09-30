@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="-1024 -1024 2048 2048" width="256" height="256">
+  <g id="hands">
+    <path fill="#aa0000" d="M -10,-910 l  10,-10 10,10 2,300 -24,0 z
+             M -13,-390 l  26,0         7,690 -40,0 z" />
+    <path fill="#aa0000" d="M   0,-620 a 120,120 0 0 1 0,240
+                        a 120,120 0 0 1 0,-240 z
+             M   0,-560 a  60,60  0 0 0 0,120
+                        a  60,60  0 0 0 0,-120 z" />
+  </g>
+</svg>
