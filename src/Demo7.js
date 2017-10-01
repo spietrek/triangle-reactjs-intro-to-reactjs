@@ -32,11 +32,15 @@ class Demo7 extends Component {
 
   render() {
     const { data } = this.state;
+
     if (this.state.loading) {
       return <span>Loading...</span>;
-    } else if (this.state.error !== null) {
+    }
+
+    if (this.state.error !== null) {
       return <span>Error: {this.state.error.message}</span>;
     }
+
     return (
       <main>
         <h1>Most Popular JavaScript Projects in Github</h1>

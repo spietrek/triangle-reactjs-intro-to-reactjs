@@ -19,6 +19,7 @@ class Demo3 extends Component {
 
   render() {
     const { date } = this.state;
+
     return (
       <div>
         <h1>DEMO 3</h1>

@@ -21,6 +21,7 @@ class Demo2 extends Component {
     const formattedDate = date.toLocaleDateString();
     const formattedTime = date.toLocaleTimeString();
     const dateTime = `Date is ${formattedDate} and Time is ${formattedTime}.`;
+
     return (
       <div>
         <h1>DEMO 2</h1>
