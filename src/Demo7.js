@@ -4,6 +4,7 @@ import RepositoryList from './RepositoryList';
 class Demo7 extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       loading: true,
       error: null,
@@ -31,19 +32,19 @@ class Demo7 extends Component {
   }
 
   render() {
-    const { data } = this.state;
+    const { loading, error, data } = this.state;
 
-    if (this.state.loading) {
+    if (loading) {
       return <span>Loading...</span>;
     }
 
-    if (this.state.error !== null) {
-      return <span>Error: {this.state.error.message}</span>;
+    if (error !== null) {
+      return <span>Error: {error.message}</span>;
     }
 
     return (
       <div>
-        <h1>Most Popular JavaScript Projects in Github</h1>
+        <h1>DEMO 7</h1>
         <RepositoryList repositories={data.items} />
       </div>
     );

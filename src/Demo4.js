@@ -4,6 +4,7 @@ import FormattedDateTime from './FormattedDateTime';
 class Demo4 extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       date: new Date()
     };

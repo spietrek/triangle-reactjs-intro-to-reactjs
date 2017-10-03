@@ -11,7 +11,10 @@ const RepositoryList = (props) => {
   ));
 
   return (
-    <ul>{repoList}</ul>
+    <div>
+      <h3>Most Popular JavaScript Projects in Github</h3>
+      <ul>{repoList}</ul>
+    </div>
   );
 };
 

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import FormattedDateTimeEven from './FormattedDateTimeEven';
+import ClockFace from './ClockFace';
 
 class Demo5 extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       date: new Date()
     };
@@ -32,7 +33,7 @@ class Demo5 extends Component {
     return (
       <div>
         <h1>DEMO 5</h1>
-        <FormattedDateTimeEven date={date} />
+        <ClockFace date={date} />
       </div>
     );
   }
