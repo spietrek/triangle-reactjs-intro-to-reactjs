@@ -42,10 +42,10 @@ class Demo7 extends Component {
     }
 
     return (
-      <main>
+      <div>
         <h1>Most Popular JavaScript Projects in Github</h1>
         <RepositoryList repositories={data.items} />
-      </main>
+      </div>
     );
   }
 }

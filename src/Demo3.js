@@ -23,7 +23,7 @@ class Demo3 extends Component {
     return (
       <div>
         <h1>DEMO 3</h1>
-        <FormattedDateTime date={date}/>
+        <FormattedDateTime date={date} />
         <button onClick={this.handleClick}>Set Date & Time</button>
       </div>
     );
