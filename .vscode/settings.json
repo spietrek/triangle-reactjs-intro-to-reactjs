@@ -1,0 +1,5 @@
+{
+  "codemetrics.basics.CodeLensEnabled": false,
+  "codemetrics.basics.CodeLensHiddenUnder": 500,
+  "prettier.singleQuote": true
+}

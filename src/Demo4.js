@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import FormattedDateTime from './FormattedDateTime';
 
 class Demo4 extends Component {
@@ -31,10 +31,10 @@ class Demo4 extends Component {
     const { date } = this.state;
 
     return (
-      <div>
+      <Fragment>
         <h1>DEMO 4</h1>
         <FormattedDateTime date={date} />
-      </div>
+      </Fragment>
     );
   }
 }

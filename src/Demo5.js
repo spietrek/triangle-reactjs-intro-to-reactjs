@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ClockFace from './ClockFace';
 
 class Demo5 extends Component {
@@ -31,10 +31,10 @@ class Demo5 extends Component {
     const { date } = this.state;
 
     return (
-      <div>
+      <Fragment>
         <h1>DEMO 5</h1>
         <ClockFace date={date} />
-      </div>
+      </Fragment>
     );
   }
 }

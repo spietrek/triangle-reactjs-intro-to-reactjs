@@ -3,13 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 // import Demo1 from './Demo1';
 // import Demo2 from './Demo2';
+// import Demo2a from './Demo2a';
+// import Demo2b from './Demo2b';
 // import Demo3 from './Demo3';
 // import Demo4 from './Demo4';
 // import Demo5 from './Demo5';
 // import Demo6 from './Demo6';
 // import Demo7 from './Demo7';
 
-class App extends Component { // eslint-disable-line react/prefer-stateless-function
+class App extends Component {
+  // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div className="App">
@@ -22,6 +25,8 @@ class App extends Component { // eslint-disable-line react/prefer-stateless-func
         </p>
         {/* <Demo1 /> */}
         {/* <Demo2 /> */}
+        {/* <Demo2a /> */}
+        {/* <Demo2b /> */}
         {/* <Demo3 /> */}
         {/* <Demo4 /> */}
         {/* <Demo5 /> */}

@@ -14,9 +14,7 @@ class FormattedDateTimeEven extends Component {
     const formattedDate = date.toLocaleDateString();
     const formattedTime = date.toLocaleTimeString();
     const dateTime = `Date is ${formattedDate} and Time is ${formattedTime}.`;
-    return (
-      <h2>{dateTime}</h2>
-    );
+    return <h2>{dateTime}</h2>;
   }
 }
 

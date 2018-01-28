@@ -7,18 +7,14 @@ import handMinute from './media/hand-minute.svg';
 import handSecond from './media/hand-second.svg';
 import spacer from './media/spacer.svg';
 
-const ClockFace = (props) => {
+const ClockFace = props => {
   const { date } = props;
   const hours = (date.getHours() % 12) * 30;
   const mintutes = date.getMinutes() * 6;
   const seconds = date.getSeconds() * 6;
   return (
     <div>
-      <img
-        src={clockFace}
-        style={{ position: 'absolute' }}
-        alt="Clock Face"
-      />
+      <img src={clockFace} style={{ position: 'absolute' }} alt="Clock Face" />
       <img
         src={handHour}
         style={{ position: 'absolute', transform: `rotate(${hours}deg)` }}
@@ -34,10 +30,7 @@ const ClockFace = (props) => {
         style={{ position: 'absolute', transform: `rotate(${seconds}deg)` }}
         alt="Hand Second"
       />
-      <img
-        src={spacer}
-        alt="Spacer"
-      />
+      <img src={spacer} alt="Spacer" />
     </div>
   );
 };

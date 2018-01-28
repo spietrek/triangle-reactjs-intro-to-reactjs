@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import RepositoryList from './RepositoryList';
 
 class Demo7 extends Component {
@@ -13,17 +13,18 @@ class Demo7 extends Component {
   }
 
   componentDidMount() {
-    const url = 'https://api.github.com/search/repositories?q=javascript&sort=stars';
+    const url =
+      'https://api.github.com/search/repositories?q=javascript&sort=stars';
     fetch(url)
       .then(response => response)
       .then(response => response.json())
-      .then((data) => {
+      .then(data => {
         this.setState({
           loading: false,
           data
         });
       })
-      .catch((error) => {
+      .catch(error => {
         this.setState({
           loading: false,
           error
@@ -43,10 +44,10 @@ class Demo7 extends Component {
     }
 
     return (
-      <div>
+      <Fragment>
         <h1>DEMO 7</h1>
         <RepositoryList repositories={data.items} />
-      </div>
+      </Fragment>
     );
   }
 }

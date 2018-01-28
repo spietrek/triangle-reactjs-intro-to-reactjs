@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 class Demo2 extends Component {
   constructor(props) {
@@ -7,14 +7,6 @@ class Demo2 extends Component {
     this.state = {
       date: new Date()
     };
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState({
-      date: new Date()
-    });
   }
 
   render() {
@@ -24,11 +16,13 @@ class Demo2 extends Component {
     const dateTime = `Date is ${formattedDate} and Time is ${formattedTime}.`;
 
     return (
-      <div>
-        <h1>DEMO 2</h1>
+      <Fragment>
+        <h1>DEMO 2a (INLINE)</h1>
         <h2>{dateTime}</h2>
-        <button onClick={this.handleClick}>Set Date & Time</button>
-      </div>
+        <button onClick={() => this.setState({ date: new Date() })}>
+          Set Date & Time
+        </button>
+      </Fragment>
     );
   }
 }
