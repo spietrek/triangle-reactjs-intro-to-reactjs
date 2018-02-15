@@ -1,40 +1,38 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Demo1 from './Demo1';
-// import Demo2 from './Demo2';
+// import Demo1a from './Demo1a';
+// import Demo1b from './Demo1b';
+// import Demo1c from './Demo1c';
+// import Demo1d from './Demo1d';
 // import Demo2a from './Demo2a';
 // import Demo2b from './Demo2b';
-// import Demo3 from './Demo3';
-// import Demo4 from './Demo4';
-// import Demo5 from './Demo5';
-// import Demo6 from './Demo6';
-// import Demo7 from './Demo7';
+// import Demo3a from './Demo3a';
+// import Demo3b from './Demo3b';
+import Demo3c from './Demo3c';
+// import Demo3d from './Demo3d';
 
-class App extends Component {
-  // eslint-disable-line react/prefer-stateless-function
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        {/* <Demo1 /> */}
-        {/* <Demo2 /> */}
-        {/* <Demo2a /> */}
-        {/* <Demo2b /> */}
-        {/* <Demo3 /> */}
-        {/* <Demo4 /> */}
-        {/* <Demo5 /> */}
-        {/* <Demo6 /> */}
-        {/* <Demo7 /> */}
-      </div>
-    );
-  }
-}
+// eslint-disable-line react/prefer-stateless-function
+const App = () => (
+  <div className="App">
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <h1 className="App-title">Welcome to React</h1>
+    </header>
+    <p className="App-intro">
+      To get started, edit <code>src/App.js</code> and save to reload.
+    </p>
+    {/* <Demo1a /> */}
+    {/* <Demo1b /> */}
+    {/* <Demo1c /> */}
+    {/* <Demo1d /> */}
+    {/* <Demo2a /> */}
+    {/* <Demo2b /> */}
+    {/* <Demo3a /> */}
+    {/* <Demo3b /> */}
+    <Demo3c />
+    {/* <Demo3d /> */}
+  </div>
+);
 
 export default App;

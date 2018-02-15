@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import VisualDateTime from './VisualDateTime';
 
 class Demo2a extends Component {
   constructor(props) {
@@ -7,24 +8,23 @@ class Demo2a extends Component {
     this.state = {
       date: new Date()
     };
+
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = () => {
-    console.log('Steve');
-    window.print();
-  };
+  handleClick() {
+    this.setState({
+      date: new Date()
+    });
+  }
 
   render() {
     const { date } = this.state;
-    const formattedDate = date.toLocaleDateString();
-    const formattedTime = date.toLocaleTimeString();
-    const dateTime = `Date is ${formattedDate} and Time is ${formattedTime}.`;
 
     return (
       <Fragment>
-        <h1>DEMO 2 (BIND)</h1>
-        <h2>{dateTime}</h2>
+        <h1>DEMO 2a</h1>
+        <VisualDateTime date={date} />
         <button onClick={this.handleClick}>Set Date & Time</button>
       </Fragment>
     );
