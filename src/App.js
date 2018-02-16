@@ -9,10 +9,9 @@ import './App.css';
 // import Demo2b from './Demo2b';
 // import Demo3a from './Demo3a';
 // import Demo3b from './Demo3b';
-import Demo3c from './Demo3c';
+// import Demo3c from './Demo3c';
 // import Demo3d from './Demo3d';
 
-// eslint-disable-line react/prefer-stateless-function
 const App = () => (
   <div className="App">
     <header className="App-header">
@@ -30,7 +29,7 @@ const App = () => (
     {/* <Demo2b /> */}
     {/* <Demo3a /> */}
     {/* <Demo3b /> */}
-    <Demo3c />
+    {/* <Demo3c /> */}
     {/* <Demo3d /> */}
   </div>
 );
