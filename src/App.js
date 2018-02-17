@@ -25,12 +25,12 @@ const App = () => (
     <Demo1b />
     <Demo1c />
     <Demo1d />
-    {/* <Demo2a /> */}
-    {/* <Demo2b /> */}
-    {/* <Demo2c /> */}
-    {/* <Demo2d /> */}
-    {/* <Demo3a /> */}
-    {/* <Demo3b /> */}
+    {/* <Demo2a />
+    <Demo2b />
+    <Demo2c />
+    <Demo2d /> */}
+    {/* <Demo3a />
+    <Demo3b /> */}
   </div>
 );
 
