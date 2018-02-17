@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import VisualRepositoryList from './VisualRepositoryList';
 
-class Demo3d extends Component {
+class Demo2d extends Component {
   constructor(props) {
     super(props);
 
@@ -45,11 +45,11 @@ class Demo3d extends Component {
 
     return (
       <Fragment>
-        <h1>DEMO 3d</h1>
+        <h1>DEMO 2d</h1>
         <VisualRepositoryList repositories={data.items} />
       </Fragment>
     );
   }
 }
 
-export default Demo3d;
+export default Demo2d;

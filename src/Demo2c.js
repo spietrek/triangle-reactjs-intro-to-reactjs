@@ -3,7 +3,7 @@ import Interval from './Interval';
 import VisualAnalogClock from './VisualAnalogClock';
 import VisualDigitalClock from './VisualDigitalClock';
 
-class Demo3c extends Component {
+class Demo2c extends Component {
   constructor(props) {
     super(props);
 
@@ -26,7 +26,7 @@ class Demo3c extends Component {
     return (
       <Fragment>
         <Interval enabled={enabled} callback={callback} timeout={1000} />
-        <h1>DEMO 3c</h1>
+        <h1>DEMO 2c</h1>
         <VisualAnalogClock date={date} />
         <VisualDigitalClock date={date} />
       </Fragment>
@@ -34,4 +34,4 @@ class Demo3c extends Component {
   }
 }
 
-export default Demo3c;
+export default Demo2c;
