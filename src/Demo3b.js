@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Interval from './Interval';
 import VisualDateTimeEven from './VisualDateTimeEven';
 
 class Demo3b extends Component {
@@ -6,32 +7,24 @@ class Demo3b extends Component {
     super(props);
 
     this.state = {
+      enabled: true,
+      callback: this.timer,
       date: new Date()
     };
   }
 
-  componentWillMount() {
-    const intervalId = setInterval(() => this.timer(), 1000);
-    this.setState({
-      intervalId
-    });
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.state.intervalId);
-  }
-
-  timer() {
+  timer = () => {
     this.setState({
       date: new Date()
     });
-  }
+  };
 
   render() {
-    const { date } = this.state;
+    const { enabled, callback, date } = this.state;
 
     return (
       <div>
+        <Interval enabled={enabled} callback={callback} timeout={1000} />
         <h1>DEMO 3b</h1>
         <VisualDateTimeEven date={date} />
       </div>
