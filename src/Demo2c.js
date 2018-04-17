@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Interval from './Interval';
 import VisualAnalogClock from './VisualAnalogClock';
 import VisualDigitalClock from './VisualDigitalClock';
@@ -24,12 +24,12 @@ class Demo2c extends Component {
     const { enabled, callback, date } = this.state;
 
     return (
-      <Fragment>
+      <div>
         <Interval enabled={enabled} callback={callback} timeout={1000} />
         <h1>DEMO 2c</h1>
         <VisualAnalogClock date={date} />
         <VisualDigitalClock date={date} />
-      </Fragment>
+      </div>
     );
   }
 }

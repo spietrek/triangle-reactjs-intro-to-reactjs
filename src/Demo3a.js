@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import VisualAnalogClock from './VisualAnalogClock';
 
 class Demo3a extends Component {
@@ -31,10 +31,10 @@ class Demo3a extends Component {
     const { date } = this.state;
 
     return (
-      <Fragment>
+      <div>
         <h1>DEMO 3a</h1>
         <VisualAnalogClock date={date} />
-      </Fragment>
+      </div>
     );
   }
 }

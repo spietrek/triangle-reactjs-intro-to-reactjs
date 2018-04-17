@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Demo1a from './Demo1a';
-// import Demo1b from './Demo1b';
-// import Demo1c from './Demo1c';
-// import Demo1d from './Demo1d';
+import Demo1a from './Demo1a';
+import Demo1b from './Demo1b';
+import Demo1c from './Demo1c';
+import Demo1d from './Demo1d';
 // import Demo2a from './Demo2a';
 // import Demo2b from './Demo2b';
 // import Demo2c from './Demo2c';
@@ -21,10 +21,10 @@ const App = () => (
     <p className="App-intro">
       To get started, edit <code>src/App.js</code> and save to reload.
     </p>
-    {/* <Demo1a />
+    <Demo1a />
     <Demo1b />
     <Demo1c />
-    <Demo1d /> */}
+    <Demo1d />
     {/* <Demo2a />
     <Demo2b />
     <Demo2c />

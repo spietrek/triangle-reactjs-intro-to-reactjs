@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import VisualDateTime from './VisualDateTime';
 
 class Demo2a extends Component {
@@ -22,11 +22,11 @@ class Demo2a extends Component {
     const { date } = this.state;
 
     return (
-      <Fragment>
+      <div>
         <h1>DEMO 2a</h1>
         <VisualDateTime date={date} />
         <button onClick={this.handleClick}>Set Date & Time</button>
-      </Fragment>
+      </div>
     );
   }
 }

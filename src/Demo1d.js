@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import formatDateTime from './utils';
 
 class Demo1d extends Component {
@@ -21,11 +21,11 @@ class Demo1d extends Component {
     const dateTime = formatDateTime(date);
 
     return (
-      <Fragment>
+      <div>
         <h1>DEMO 1d (ARROW)</h1>
         <h2>{dateTime}</h2>
         <button onClick={this.handleClick}>Set Date & Time</button>
-      </Fragment>
+      </div>
     );
   }
 }

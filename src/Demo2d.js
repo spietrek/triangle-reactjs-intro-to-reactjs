@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import VisualRepositoryList from './VisualRepositoryList';
 
 class Demo2d extends Component {
@@ -44,10 +44,10 @@ class Demo2d extends Component {
     }
 
     return (
-      <Fragment>
+      <div>
         <h1>DEMO 2d</h1>
         <VisualRepositoryList repositories={data.items} />
-      </Fragment>
+      </div>
     );
   }
 }

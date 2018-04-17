@@ -23,7 +23,7 @@ const VisualRepositoryList = props => {
 };
 
 VisualRepositoryList.propTypes = {
-  repositories: PropTypes.array.isRequired
+  repositories: PropTypes.array.isRequired // eslint-disable-line react/forbid-prop-types
 };
 
 export default VisualRepositoryList;

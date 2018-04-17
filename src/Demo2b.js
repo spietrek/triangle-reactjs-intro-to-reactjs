@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import VisualDateTime from './VisualDateTime';
 
 class Demo2b extends Component {
@@ -31,10 +31,10 @@ class Demo2b extends Component {
     const { date } = this.state;
 
     return (
-      <Fragment>
+      <div>
         <h1>DEMO 2b</h1>
         <VisualDateTime date={date} />
-      </Fragment>
+      </div>
     );
   }
 }
